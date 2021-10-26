@@ -1,0 +1,111 @@
+.VueCarousel{
+  border-top:1px solid rgba(0,0,0,.4) ;
+  border-bottom: 1px solid rgba(0,0,0,.4) ;
+}
+.VueCarousel, .VueCarousel-wrapper, .carousel {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+.VueCarousel-wrapper .carousel{
+  width: 100vw;
+  height: 50vmin;
+  margin: auto;
+  background-color: rgba(0,0,0,.4);
+  overflow: hidden;
+}
+.carousel img {
+  width: 100vw;
+}
+.VueCarousel-navigation{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  width: 100vw;
+  height: 50vmin;
+  position:absolute;
+  font: 20px sans-serif;
+}
+.VueCarousel-navigation-next div{
+  border-radius: 50%;
+  border-top-left-radius: 5%;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: 3vh;
+  height: 3vh;
+  border: 3px solid;
+  border-color: hsla(0,0%,100%,.3);
+}
+.VueCarousel-navigation-prev div:hover,
+.VueCarousel-navigation-next div:hover,
+.VueCarousel-navigation-button[data-v-453ad8cd]:hover{
+  border: 2px solid rgba(255,125,26,.6);
+}
+.VueCarousel-navigation-prev div{
+  border-radius: 50%;
+  border-top-left-radius: 5%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 3vh;
+  height: 3vh;
+  border: 3px solid;
+  border-color: hsla(0,0%,100%,.3);
+}
+.VueCarousel-navigation-prev{
+  margin-left: 5vw ;
+}
+.VueCarousel-navigation-next{
+  margin-right: 5vw ;
+}
+.VueCarousel-navigation-button[data-v-453ad8cd] {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: hsla(0,0%,100%,.3);
+  background: rgba(0,0,0,.4);
+}
+.VueCarousel-navigation-button[data-v-453ad8cd]:hover{
+  background: rgba(100,100,100,.4);
+}
+
+.VueCarousel-dot[data-v-438fd353]{
+  margin:0 2vw 1vh 2vw;
+  border: 3px solid;
+  border-color: hsla(0,0%,100%,.3);
+  opacity: 1;
+}
+#load-more{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.sort-up{
+  transform: rotate(180deg);
+  transition: all .3s ease-out;
+}
+.btn:hover{
+  background-color: #ffe5e6;
+  transition: all .3s ease-out;
+}
+@media only screen and (max-width: 1024px) {
+  .VueCarousel-wrapper .carousel{
+    height: 28vh;
+  }
+  .VueCarousel-navigation{
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .VueCarousel-navigation {
+    display: none;
+  }
+}

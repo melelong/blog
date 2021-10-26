@@ -1,0 +1,17 @@
+.Userpage .content {
+  width: 84vw;
+  height: 80vh;
+  margin: auto;
+}
+.content-list, .content-content{
+  float: left;
+}
+.content-list {
+  width: 20%;
+  background-color: red;
+}
+.content-content {
+  width: 80%;
+  height: 100%;
+  background-color: green;
+}

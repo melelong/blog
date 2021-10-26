@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/toplist/toplist",
+    "pages/player/player",
+    "pages/songslist/songslist",
+    "pages/Album/Album"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#d43c33",
+    "backgroundColor": "#d43c33",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "text": "推荐",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/music.png",
+        "selectedIconPath": "static/img/music1.png"
+      },
+      {
+        "text": "排行",
+        "pagePath": "pages/toplist/toplist",
+        "iconPath": "static/img/Leaderboard.png",
+        "selectedIconPath": "static/img/Leaderboard1.png"
+      },
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "static/img/find.png",
+        "selectedIconPath": "static/img/find1.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "permission": {},
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

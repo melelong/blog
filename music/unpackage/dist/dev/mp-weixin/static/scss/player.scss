@@ -1,0 +1,199 @@
+// player.scss
+
+.player {
+		height: auto;
+		min-height: 100vh;
+		background-color: rgb(252, 252, 253);
+
+		// 背景模糊遮罩
+		.Mask {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: auto;
+			min-height: 100vh;
+			background-color: rgba(0, 0, 0, .6);
+			filter: blur(10px);
+			z-index: 1;
+		}
+		
+		// 内容
+		.content {
+			width: 100%;
+			height: auto;
+			min-height: 100vh;
+			position: absolute;
+			z-index: 2;
+
+			// 唱片
+			.player0 {
+				width: 100vw;
+				height: 40vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.Animation {
+					animation: animation 5s infinite;
+					-webkit-animation: animation 5s infinite;
+					animation-timing-function: linear;
+					-webkit-animation-timing-function: linear;
+				}
+
+				@keyframes animation {
+					from {
+						transform: rotate(0deg);
+					}
+
+					to {
+						transform: rotate(360deg);
+					}
+				}
+
+				.player1 {
+					width: 60vw;
+					height: 60vw;
+					border-radius: 50%;
+					position: absolute;
+
+					.player2 {
+						width: 60vw;
+						height: 60vw;
+						border-radius: 50%;
+						background-color: #000000;
+						background-color: rgba(192, 192, 192, .3);
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate3d(-50%, -50%, 0);
+					}
+
+					.player3 {
+						width: 54vw;
+						height: 54vw;
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate3d(-50%, -50%, 0);
+						background: #000000;
+					}
+
+					.player4 {
+						width: 54vw;
+						height: 54vw;
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate3d(-50%, -50%, 0);
+						background: url(//s3.music.126.net/mobile-new/img/disc_light.png?2bb24f3…=) no-repeat;
+						background-size: contain;
+					}
+
+					.player5 {
+						width: 36vw;
+						height: 36vw;
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						overflow: hidden;
+						transform: translate3d(-50%, -50%, 0);
+						
+						.player51 {
+							width: 36vw;
+							height: 36vw;
+						}
+					}
+
+					.player6 {
+						width: 14vw;
+						height: 14vw;
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate3d(-50%, -50%, 0);
+					}
+				}
+			}
+
+			// 歌曲标题
+			.songtitle {
+				text-align: center;
+				width: 80vw;
+				margin: auto;
+				height: 6vh;
+				line-height: 6vh;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				word-break: break-all;
+
+				.title {
+					font-size: 40rpx;
+					color: #FFFFFF;
+				}
+
+				.singer {
+					font-size: 34rpx;
+					color: #888888;
+
+				}
+			}
+			
+			// 歌词
+			.lyrics {
+				position: relative;
+				margin: auto;
+				width: 80vw;
+				height: 20vh;
+				white-space: normal;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				word-break: break-all;
+
+				.words {
+					padding: 4px;
+					text-align: center;
+					color: #888888;
+				}
+				.color1{
+					color: #FFFFFF;
+				}
+			}
+			
+			// 下
+			.bottom {
+				position: relative;
+				bottom: -20vw;
+				display: flex;
+				justify-content: space-around;
+				
+				// 分享
+				.share {
+					width: 40vw;
+					margin: auto;
+					text-align: center;
+					color: #FFFFFF;
+					border: 1px solid #FFFFFF;
+					border-radius: 10px;
+					background-color: rgba(0, 0, 0, 0);
+				}
+				
+				// 下载
+				.download {
+					width: 40vw;
+					margin: auto;
+					text-align: center;
+					color: #FFFFFF;
+					border: 1px solid #FFFFFF;
+					border-radius: 10px;
+					background-color: rgba(0, 0, 0, 0);
+				}
+			}
+
+		}
+
+	}

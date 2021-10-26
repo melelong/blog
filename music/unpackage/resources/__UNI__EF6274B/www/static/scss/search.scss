@@ -1,0 +1,230 @@
+// search.scss
+
+.search {
+		height: auto;
+		min-height: 100vh;
+		background-color: rgb(252, 252, 253);
+
+		// 搜索框
+		.search_bar {
+			width: 100vw;
+			height: 50px;
+			position: sticky;
+			top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(252, 252, 253);
+			z-index: 1;
+			
+			.left {
+					border-top-left-radius: 50%;
+					border-bottom-left-radius: 50%;
+					background-color: #ebecec;
+					width: 30px;
+					height: 30px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+			
+					image {
+						width: 12px;
+						height: 12px;
+					}
+			}
+			
+			.search_bar_input {
+					font-size: 14px;
+					background-color: #ebecec;
+					width: 80vw;
+					height: 30px;
+			
+					.search_bar_input_placeholder {
+						color: #cbccd2;
+					}
+			}
+			
+			.right {
+					border-top-right-radius: 50%;
+					border-bottom-right-radius: 50%;
+					background-color: #ebecec;
+					width: 30px;
+					height: 30px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+			
+					image {
+						width: 12px;
+						height: 12px;
+					}
+			}
+		}
+		.search_bar1 {
+			width: 100vw;
+			background-color: rgb(252, 252, 253);
+			height: 50px;
+			z-index: 1;
+		}
+		
+		// 热门搜索
+		.searchHotlist {
+			border-top: 1px solid rgba(0, 0, 0, .1);
+			padding-top: 1vh;
+			color: #333;
+
+			.searchHotTitle {
+				padding-left: 10px;
+				font-size: 24rpx;
+				height: 4vh;
+				line-height: 4vh;
+				
+			}
+
+			.searchHotContent {
+				.searchHot {
+					font-size: 26rpx;
+					text-align: center;
+					width: auto;
+					font-weight: 400;
+					display: inline-block;
+					margin: 3px 6px;
+					padding: 5px 12px;
+					border: 1px solid rgba(0, 0, 0, .1);
+					border-radius: 30px;
+				}
+			}
+		}
+		
+		// 搜索历史
+		.searchHistorylist {
+			border-top: 1px solid rgba(0, 0, 0, .1);
+			color: #333;
+		
+			.searchHistorytop {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 1vh;
+				.searchHistoryTitle {
+					width: 40vw;
+					height: 4vh;
+					padding-left: 10px;
+					line-height: 4vh;
+					display: inline-block;
+					font-size: 24rpx;
+				}
+				.alldel{
+					width: 10vw;
+					height: 4vh;
+					display: inline-block;
+					display: flex;
+					flex-direction: row-reverse;
+					align-items: center;
+					padding-right: 20px;
+					image{
+						width: 34rpx;
+						height: 34rpx;
+					}
+				}
+			}
+
+			.searchHistoryContent {
+				margin-bottom: 4px;
+
+				.searchHistory {
+					font-size: 26rpx;
+					text-align: center;
+					width: auto;
+					font-weight: 400;
+					display: inline-block;
+					margin: 3px 6px;
+					padding: 5px 12px;
+					border: 1px solid rgba(0, 0, 0, .1);
+					border-radius: 30px;
+				}
+			}
+			
+		}
+
+		// 搜索建议
+		.suggest {
+			.suggest_keywords {
+				color: #d43c33;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				word-break: break-all;
+				border-bottom: 1px solid rgba(0, 0, 0, .1);
+				padding: 10px;
+			}
+
+			.suggest_list {
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				word-break: break-all;
+				display: flex;
+				border-bottom: 1px solid rgba(0, 0, 0, .1);
+				align-items: center;
+				padding: 10px;
+
+				image {
+					width: 12px;
+					height: 12px;
+					margin-right: 10px;
+				}
+
+				.name {
+					width: 80vw;
+
+				}
+			}
+		}
+
+		// 搜索结果
+		.search_results {
+			.Songs {
+				border-bottom: 1px solid rgba(0, 0, 0, .1);
+				display: flex;
+				align-items: center;
+
+				.Song_font {
+					width: 80vw;
+					margin-left: 12px;
+
+					.name {
+						width: 100%;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						word-break: break-all;
+					}
+
+					.info {
+						width: 100%;
+						color: #888;
+						font-size: 28rpx;
+
+						image {
+							width: 12px;
+							height: 8px;
+							margin: 0 4px 0 0;
+						}
+					}
+				}
+
+				.Song_img {
+					width: 14vw;
+					height: 57px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					image {
+						width: 22px;
+						height: 22px;
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,104 @@
+// toplist.scss
+
+.toplists{
+		height: auto;
+		min-height: 100vh;
+		background-color: rgb(252, 252, 253);
+		.toplist{
+			position: sticky;
+			top: 0;
+			width: 100vw;
+			// margin-bottom: 22rpx;
+			background-color: rgb(252, 252, 253);
+			z-index: 2;
+		}
+		.content {
+			width: 100vw;
+			.left{
+				.toplist{
+					width: 92vw;
+					margin: 4vw auto;
+					position: relative;
+					display: flex;
+					z-index: 0;
+					.toplistimage1 {
+						width: 244rpx;
+						height: 244rpx;
+						border-radius: 8px;
+						overflow: hidden;
+						.toplistimage{
+							width: 244rpx;
+							height: 244rpx;
+						}
+					}
+					.UpdateTime{
+						position: absolute;
+						font-size: 24rpx;
+						left: 10rpx;
+						bottom: 10rpx;
+						color: #FFFFFF;
+					}
+					.toplistText{
+						height: 244rpx;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
+						font-size: 32rpx;
+						view {
+							margin-left: 4vw;
+							width: 50vw;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+							word-break: break-all;
+						}
+					}
+				}
+			}
+			.right{
+				display: flex;
+				// justify-content: space-evenly;
+				// justify-content: end;
+				flex-wrap: wrap;
+				margin:0 0 4vw;
+				
+				.toplist{
+					position: relative;
+					display: flex;
+					// justify-content: space-evenly;
+					// justify-content: end;
+					flex-wrap: wrap;
+					margin:0 0 4vw;
+					z-index: 0;
+					
+					.box {
+						// border: 1px solid red;
+						margin: 4vw 0 0 4vw;
+						position: relative;
+						height: 44vw;
+						
+						.toplistimage1 {
+							width: 44vw;
+							height: 44vw;
+							border-radius: 8px;
+							overflow: hidden;
+							
+							.toplistimage{
+								width: 44vw;
+								height: 44vw;
+							}
+						}
+						
+						.UpdateTime{
+							position: absolute;
+							display: block;
+							font-size: 30rpx;
+							left: 20rpx;
+							bottom: 20rpx;
+							color: #FFFFFF;
+						}
+					}
+				}
+			}
+		}
+	}

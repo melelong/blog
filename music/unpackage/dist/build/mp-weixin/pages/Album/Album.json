@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "专辑",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "fr-image": "/components/fr-image/fr-image"
+  }
+}
