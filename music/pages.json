@@ -1,0 +1,89 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "推荐音乐",
+				"enablePullDownRefresh": true
+			}
+		}
+	    ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/toplist/toplist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "排行",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+		,{
+		    "path" : "pages/player/player",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "播放",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/songslist/songslist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "歌单",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/Album/Album",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "专辑",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "#FFFFFF",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#d43c33",
+		"backgroundColor": "#d43c33",
+		"enablePullDownRefresh":true,
+		"backgroundTextStyle": "light"
+	},
+	"tabBar":{
+		"color":"#aaaaaa",
+		"selectedColor":"#d43c33",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+				"text":"推荐",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/img/music.png",
+				"selectedIconPath":"static/img/music1.png"
+			},
+			{
+				"text":"排行",
+				"pagePath":"pages/toplist/toplist",
+				"iconPath":"static/img/Leaderboard.png",
+				"selectedIconPath":"static/img/Leaderboard1.png"
+			},
+			{
+				"text":"搜索",
+				"pagePath":"pages/search/search",
+				"iconPath":"static/img/find.png",
+				"selectedIconPath":"static/img/find1.png"
+			}
+		]
+	}
+}
