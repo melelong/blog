@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "排行",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "uni-segmented-control": "/uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control",
-    "fr-image": "/components/fr-image/fr-image"
-  }
-}

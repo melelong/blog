@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "播放",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "fr-image": "/components/fr-image/fr-image"
-  }
-}

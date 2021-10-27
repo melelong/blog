@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "推荐音乐",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "fr-image": "/components/fr-image/fr-image"
-  }
-}
